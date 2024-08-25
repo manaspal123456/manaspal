@@ -1,83 +1,117 @@
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Resume jayant Pal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .hero {
+            background-color: #2196F3;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .content {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
-<body bgcolor=pink>
-  <fieldset>
-    <legend>Resume</legend>
-    <u> <h2 align=center>RESUME</h2></u>
-    <u><font color=black>   <h3 align=left>Lalita singh</h3></font></u>
-    <p>Permanent Address<br>Village, Khaurhawa Post, <br>Gandhi Nagar Distic(Basti)</p>
-    <table border=2 width=100% bordercolor =black >
-      <tr bgcolor =white>
-        <td>ADUCATION  OBJECT</td>
-      </tr>
-    </table>
-    <table border=2 bordercolor =black><br>
-      <tr>
-        <td>Degree/Bord</td>
-        <td>Division</td>
-        <td>Passing Year</td>
-        <td>Distic</td>
-      </tr>
-      <tr>
-        <td>High School U.P Bord</td>
-        <td>Second</td>
-        <td>2001</td>
-        <td>Gorakhpur</td>
-      </tr>
-      <tr>
-        <td>Inter</td>
-        <td>First</td>
-        <td>2003</td>
-        <td>Gorakhpur</td>
-        </tr>
-      <tr>
-        <td>Graduation</td>
-        <td>First</td>
-        <td>2006</td>
-        <td>Gorakhpur</td>
-         </tr>
-    </table><br>
-
-    <table border=2 type =bullet width=100% bordercolor =black>
-      <tr bgcolor=white>
-        <td>AOTHER  QUALIFICATION</td>
-        </tr>
-    </table>
-    <ul type=bullet>
-      <li>Tailor Degree Holder.</li>
-      <li>Cair Giver.</li>
-      <li>Graduate House Wife From University Of Gorakhpur.</li>
-      </ul>
-    <table width =100% border=2 bordercolor=black>
-      <tr bgcolor=white>
-        <td>EXPRIENCE</td>
-      </tr>
-    </table>
-    <ul type=bullet>
-      <li>Six Year English Teaching Exprience.</li>
-      </ul>
-      <table border=2 width=100% bordercolor=black>
-        <tr bgcolor =white>
-          <td>PERSONAL DETAILS</td>
-        </tr>
-      </table>
-    <form><br>
-       Name: <input type=text placeholder=Name><br><br>
-      Father Name: <input type=text placeholder="Father Name"><br><br>
-      Gender
-    Male: <input type="radio" name="radio">Female: <input type="radio" name="radio">Other: <input type="radio" name="radio"><br><br>
-      DOB: <input type="text" placeholder="DOB">
-    </form>
-    <ul type=bullet>
-      
-      <li> <a href="https://edvalley.netlify.app/">click hear</a><br>
-        <li> <a href="https://svmrambaghbasti.in/">click hear</a>
-          </ul>
-      </fieldset>
-  <img src="image.jpg.jpg">
-  
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Our Educational Platform</h1>
+        <p>Empowering you with knowledge and skills for a brighter future.</p>
+    </section>
+    
+    <section class="content">
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2024 Educational Website. All rights reserved.
+    </footer>
 </body>
-
 </html>
