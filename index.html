@@ -7,22 +7,31 @@
   <meta name="viewportt" conteent="width=device-width,initial-scale=1.0">
 </head>
 <body>
-  <script>
-        // Function to notify when the page is loaded
-        window.onload = function() {
-            fetch('notify.php', {
-                method: 'GET'
-            })
-            .then(response => {
-                if (!response.ok) {
-                    console.error('Error notifying visitor:', response.statusText);
-                }
-            })
-            .catch(error => {
-                console.error('Fetch error:', error);
-            });
-        };
-    </script>
+          <?php
+// Set the recipient email address.
+$to = 'your-email@example.com';  // Replace with your email address
+
+// Set the email subject.
+$subject = 'Website Visitor Notification';
+
+// Build the email message.
+$message = "A visitor has just visited your website.\n";
+
+// Send the email.
+$success = mail($to, $subject, $message);
+
+// You can also log the IP address or timestamp if desired
+$ip = $_SERVER['REMOTE_ADDR'];
+$message .= "Visitor IP: $ip\n";
+file_put_contents('visitor_log.txt', "$ip visited on " . date('Y-m-d H:i:s') . "\n", FILE_APPEND);
+
+// Optionally return a response for the fetch call
+if ($success) {
+    http_response_code(200);
+} else {
+    http_response_code(500);
+}
+?>
    <fieldset>
     
   <marquee behaviour=scroll direction=left bgcolor=skyblue >
