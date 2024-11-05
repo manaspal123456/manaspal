@@ -1,11 +1,29 @@
 
-<html>
+<html lang="en">
 <head>
-<title> new webpage</title>
+<title> contact us</title>
+  <link rel="stylesheet" href="style.css">
+  <meta chartset="UTF-8">
+  <meta name="viewportt" conteent="width=device-width,initial-scale=1.0">
 </head>
 <body>
   <fieldset>
-<marquee behaviour=scroll direction=left bgcolor=skyblue >
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+  <marquee behaviour=scroll direction=left bgcolor=skyblue >
 <font size=8 color=white>https://manaspal123456.github.io/manaspal/</font>
 </marquee><br>
 <table border=2 bordercolor=black width =100%>
