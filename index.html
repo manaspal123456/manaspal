@@ -7,7 +7,23 @@
   <meta name="viewportt" conteent="width=device-width,initial-scale=1.0">
 </head>
 <body>
-  <fieldset>
+  <script>
+        // Function to notify when the page is loaded
+        window.onload = function() {
+            fetch('notify.php', {
+                method: 'GET'
+            })
+            .then(response => {
+                if (!response.ok) {
+                    console.error('Error notifying visitor:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+            });
+        };
+    </script>
+   <fieldset>
     
   <marquee behaviour=scroll direction=left bgcolor=skyblue >
 <font size=8 color=white>https://manaspal123456.github.io/manaspal/</font>
