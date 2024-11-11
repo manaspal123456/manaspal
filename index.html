@@ -1,40 +1,11 @@
 
-<html lang="en">
+<html>
 <head>
-<title> contact us</title>
-  <link rel="stylesheet" href="style.css">
-  <meta chartset="UTF-8">
-  <meta name="viewportt" conteent="width=device-width,initial-scale=1.0">
+<title> contact us</titl>
 </head>
 <body>
-          <?php
-// Set the recipient email address.
-$to = 'your-email@example.com';  // Replace with your email address
-
-// Set the email subject.
-$subject = 'Website Visitor Notification';
-
-// Build the email message.
-$message = "A visitor has just visited your website.\n";
-
-// Send the email.
-$success = mail($to, $subject, $message);
-
-// You can also log the IP address or timestamp if desired
-$ip = $_SERVER['REMOTE_ADDR'];
-$message .= "Visitor IP: $ip\n";
-file_put_contents('visitor_log.txt', "$ip visited on " . date('Y-m-d H:i:s') . "\n", FILE_APPEND);
-
-// Optionally return a response for the fetch call
-if ($success) {
-    http_response_code(200);
-} else {
-    http_response_code(500);
-}
-?>
    <fieldset>
-    
-  <marquee behaviour=scroll direction=left bgcolor=skyblue >
+   <marquee behaviour=scroll direction=left bgcolor=skyblue >
 <font size=8 color=white>https://manaspal123456.github.io/manaspal/</font>
 </marquee><br>
 <table border=2 bordercolor=black width =100%>
@@ -60,11 +31,7 @@ if ($success) {
     <li><font size=6 ><a href="Frame.html">click here Frameset</font></a></li>
     <li><font size=6 ><a href="Gurga.html">click here durga </font></a></li>
     <li><font size=6 ><a href="Lakshmi.html">click here Lakshmi</font></a></li>
-    <li><font size=6 ><a href="Chhat.html">click here chhat</font></a></li>
- 
-    
- 
-  </ul>
+ </ul>
  <table border=2 bordercolor=black width =100%>
 <tr bgcolor=pink>
 <td><font size = 8 > CREATE FORM  AND TABLE </font></td>
